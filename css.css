@@ -1,0 +1,95 @@
+body {
+      background: linear-gradient(to right, #63abbe, #344abc);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content:;
+      align-items: ;
+      height: 100vh;
+      margin: 0;
+     } 
+.clock {
+      background: #ab443;
+      padding: 40px 60px;
+      border-radius: 0px;
+      box-shadow: 0 8px 0.3px #ffff;
+      color: #fff;
+      font-size: 48px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .clock span {
+      display: inline-block;
+      min-width: 70px;
+    }
+    h1 {
+      font-size: 3rem;
+      color: white;
+      opacity: 0;
+      animation: slideFadeIn 2s ease forwards;
+    }
+
+    @keyframes slideFadeIn {
+      0% {
+        transform: translateY(30px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+     .calendar-container {
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      padding: 30px 40px;
+      text-align: center;
+      width: 320px;
+      animation: fadeInUp 1s ease;
+      position: relative;
+      z-index: 2;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .date-box {
+      font-size: 48px;
+      font-weight: bold;
+      color: #3a3f58;
+    }
+
+    .day-name {
+      font-size: 20px;
+      color: #888;
+      margin-bottom: 10px;
+    }
+
+    .month-year {
+      font-size: 18px;
+      color: #5a5e85;
+      margin-bottom: 20px;
+    }
+
+    .calendar-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+      font-size: 14px;
+      color: #3a3f58;
+    }
+
+    .calendar-grid div {
+      padding: 10px 0;
+      border-radius: 10px;
+    }
+
+    .today {
+      background: #3a3f58;
+      color: white;
+      font-weight: bold;
+    }
+
+    
